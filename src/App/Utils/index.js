@@ -1,0 +1,1 @@
+export const thousandSeparator = value => parseFloat(value).toLocaleString('en');

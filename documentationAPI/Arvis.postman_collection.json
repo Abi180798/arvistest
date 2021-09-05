@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "c1b24041-a562-4103-9eb6-e0e2110edd73",
+		"name": "Arvis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://arvisweb.000webhostapp.com/login.php",
+					"protocol": "https",
+					"host": [
+						"arvisweb",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kategori",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://arvisweb.000webhostapp.com/kategori.php",
+					"protocol": "https",
+					"host": [
+						"arvisweb",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"kategori.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produk",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"kategori\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://arvisweb.000webhostapp.com/produk.php",
+					"protocol": "https",
+					"host": [
+						"arvisweb",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"produk.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Keranjang",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://arvisweb.000webhostapp.com/keranjang.php",
+					"protocol": "https",
+					"host": [
+						"arvisweb",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"keranjang.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddKeranjang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_produk\":1,\r\n    \"id_kategori\":1,\r\n    \"id_user\":1,\r\n    \"jml\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://arvisweb.000webhostapp.com/addkeranjang.php",
+					"protocol": "https",
+					"host": [
+						"arvisweb",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"addkeranjang.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DelKeranjang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_keranjang\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://arvisweb.000webhostapp.com/delkeranjang.php",
+					"protocol": "https",
+					"host": [
+						"arvisweb",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"delkeranjang.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

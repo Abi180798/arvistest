@@ -1,0 +1,107 @@
+.home-navbar {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  /* border-bottom: 1px solid black; */
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffffff,
+    #ece9e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar-home {
+  display: flex;
+  align-items: center;
+}
+
+.c-home{
+  margin-top: 80px;
+}
+.carousel-home .carousel-inner{
+  height: 200px;
+  border-radius: 6px;
+}
+.carousel-home .carousel-item img{
+  margin-top: -300px;
+}
+.card-kategori{
+  font-size: small;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #dfe4ea;
+  border-radius: 6px;
+  text-align: center;
+}
+.card-kategori-active{
+  background-color: #f1f2f6;
+  font-size: small;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #dfe4ea;
+  border-radius: 6px;
+  text-align: center;
+}
+.card-produk{
+  font-size: small;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #dfe4ea;
+  border-radius: 6px;
+}
+.none-dec{
+  color: black;
+  text-decoration: none;
+}
+
+.login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-card{
+  min-width: 300px;
+  border: 1px solid #dfe4ea;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.btn-login{
+  display: flex;
+  align-items: center;
+}
+
+.price{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.quantity{
+  max-width: 50px;
+}
+
+.list-keranjang{
+  padding: 20px;
+  margin: 5px;
+  border-radius: 6px;
+  background: #dfe4ea;
+}
+.list-keranjang-head{
+  padding: 20px;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: bolder;
+}
+.fl-1{
+  flex:1
+}
+
+@media screen and (min-width: 768px) {
+}
