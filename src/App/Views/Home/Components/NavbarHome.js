@@ -45,7 +45,7 @@ function NavbarHome() {
           <img src={logoHabib} width="100" />
           </Link>
         </div>
-        <div className="ms-4">
+        <div className="ms-4 home-navbar-search">
           <InputGroup>
             <FormControl placeholder="Cari produk" />
             <Button variant="outline-secondary" id="button-addon2">
